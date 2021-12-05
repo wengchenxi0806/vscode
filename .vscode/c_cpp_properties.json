@@ -1,25 +1,31 @@
 {
     "configurations": [
         {
-            "name": "Win32",
+            "name": "MinGW",
+            "intelliSenseMode": "clang-x64",
+            "compilerPath": "E:/Ide/LLVM/bin/g++.exe", //之前安装的编译器的路径
             "includePath": [
-                "F:/SOFT/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++",
-                "F:/SOFT/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32",
-                "F:/SOFT/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward",
-                "F:/SOFT/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include",
-                "F:/SOFT/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed",
-                "F:/SOFT/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/include/*", //当前文件夹下的include
+                "E:/Ide/LLVM/include/*", //LLVM的include
+                "E:/Ide/LLVM/lib/gcc/x86_64-w64-mingw32/8.1.0/include/*", //mingw的include
+                "E:/Ide/LLVM/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++",
+                "E:/Ide/LLVM/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32",
+                "E:/Ide/LLVM/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward",
+                "E:/Ide/LLVM/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include",
+                "E:/Ide/LLVM/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed",
+                "E:/Ide/LLVM/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"
             ],
-            "defines": [
-                "_DEBUG",
-                "UNICODE",
-                "_UNICODE"
-            ],
-            "windowsSdkVersion": "10.0.19041.0",
-            "compilerPath": "F:\\SOFT\\Microsoft Visual Studio\\VC\\Tools\\MSVC\\14.30.30705\\bin\\Hostx64\\x64\\cl.exe",
-            "cStandard": "c17",
-            "cppStandard": "c++17",
-            "intelliSenseMode": "windows-msvc-x64"
+            "defines": [],
+            "browse": {
+                "path": [
+                    "${workspaceFolder}"
+                ],
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": ""
+            },
+            "cStandard": "c11",
+            "cppStandard": "c++17"
         }
     ],
     "version": 4
