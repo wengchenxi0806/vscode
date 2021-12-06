@@ -6,7 +6,6 @@
             "compilerPath": "E:/Ide/LLVM/bin/g++.exe", //之前安装的编译器的路径
             "includePath": [
                 "${workspaceFolder}/**",
-                "${workspaceFolder}/include/*", //当前文件夹下的include
                 "E:/Ide/LLVM/include/*", //LLVM的include
                 "E:/Ide/LLVM/lib/gcc/x86_64-w64-mingw32/8.1.0/include/*", //mingw的include
                 "E:/Ide/LLVM/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++",
@@ -19,7 +18,8 @@
             "defines": [],
             "browse": {
                 "path": [
-                    "${workspaceFolder}"
+                    "${workspaceFolder}",
+                    "E:/Ide/LLVM"
                 ],
                 "limitSymbolsToIncludedHeaders": true,
                 "databaseFilename": ""

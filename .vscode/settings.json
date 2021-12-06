@@ -22,7 +22,11 @@
         "xstddef": "cpp",
         "xtr1common": "cpp",
         "xutility": "cpp",
-        "*.tcc": "cpp"
+        "*.tcc": "cpp",
+        "ostream": "cpp",
+        "iostream": "cpp"
     },
-    "C_Cpp.errorSquiggles": "Disabled"
+    "C_Cpp.errorSquiggles": "Disabled",
+    "markdown-preview-enhanced.enableExtendedTableSyntax": true, // MPE 表格扩展功能
+    "markdown-preview-enhanced.enableScriptExecution": true // MPE 渲染代码的运行结果功能，侧边目录栏依赖此设置
 }
